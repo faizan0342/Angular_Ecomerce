@@ -1,12 +1,10 @@
 const mongoose = require("mongoose");
 
-const userSchema = new mongoose.Schema({
+const categorySchema = new mongoose.Schema({
     name: String,
-    email : String,
-    password : String,
-    isAdmin : Boolean
+  
 })
 
-const userModel = mongoose.model("users" , userSchema)
+const categoryModel = mongoose.model("categories" , categorySchema)
 
-module.exports = userModel
+module.exports = categoryModel
