@@ -1,8 +1,11 @@
 const express = require("express");
 const mongoose = require("mongoose")
 const categoryRoutes = require("./routes/category")
+const core = require("cors");
 
 const app = express();
+
+app.use(core());
 
 async function connectDb(){
   await mongoose.connect("mongodb://localhost:27017" ,

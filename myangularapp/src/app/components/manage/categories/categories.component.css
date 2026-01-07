@@ -1,0 +1,30 @@
+Structure
+table {
+  width: 100%;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  padding-top: 0.5rem;
+}
+
+.margin-right {
+  /* margin-right: 1rem; */
+}
+
+.spacer {
+  flex: 1;
+  max-width: 80%
+  /* margin-left: 1rem; */
+}
+
+.add_category_btn{
+  margin-bottom: 0.8rem;
+}

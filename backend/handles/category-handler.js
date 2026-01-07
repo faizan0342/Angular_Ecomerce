@@ -13,6 +13,13 @@ async function addCategory(categoryBody){
     // res.send(category.toObject()); 
 }
 
+async function getCategory(){
+
+    let categories = await Category.find();
+    
+    return categories.map((e) => e.toObject()); 
+}
+
 async function updateCategory( id ,categoryBody){
 
     await Category.findByIdAndUpdate({_id : id} , categoryBody)
@@ -21,4 +28,11 @@ async function updateCategory( id ,categoryBody){
     return ; 
 }
 
-module.exports = {addCategory , updateCategory}
+async function deleteCategory(id){
+    await Category.findByIdAndDelete({_id : id})
+    return ; 
+}
+
+
+
+module.exports = {addCategory , updateCategory , deleteCategory, getCategory}

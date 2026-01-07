@@ -1,11 +1,11 @@
 import { Component, HostListener } from '@angular/core';
-// import { RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 import { StudentComponent } from './student/student.component';
 import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-root',
-  imports: [StudentComponent ,MatButtonModule],
+  imports: [StudentComponent ,MatButtonModule , RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
